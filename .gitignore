@@ -2,9 +2,9 @@ __pycache__
 .vscode
 env
 
-~comments_replied_to.txt
 ~credentials.png
 ~panda_facts.txt
 ~subreddits.txt
+comments_replied_to.txt
 
 login.py
