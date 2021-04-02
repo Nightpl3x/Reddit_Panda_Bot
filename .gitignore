@@ -1,4 +1,10 @@
+__pycache__
 .vscode
 env
-authenticate.py
-Credentials.png
+
+~comments_replied_to.txt
+~credentials.png
+~panda_facts.txt
+~subreddits.txt
+
+login.py
