@@ -1,11 +1,13 @@
 import praw
 import time
 import os
+import random
+import panda_facts
 
 def run(reddit,comments_replied_to):
     for comment in reddit.subreddit('test').comments(limit=1):
-        if ("panda" in comment.body.lower()) and (comment.id not in comments_replied_to):
-            comment.reply("*empty*")
+        if ("panda fact" in comment.body.lower()) and (comment.id not in comments_replied_to):
+            comment.reply(random.choice(panda_facts.panda_facts))
 
             #comments_replied_to.append(comment.id)
             comments_replied_to = "\n".join(comment.id)
